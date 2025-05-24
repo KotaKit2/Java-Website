@@ -9,7 +9,22 @@
 </head>
 
 <body>
-    <div class="cotainer mt-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">user management</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container mt-5">
         <h2 class="text-center text-primary">Registration Form</h2>
         <form class="needs-validation border p-4 shadow-sm bg-light" novalidate>
             <div class="row">
@@ -55,14 +70,14 @@
             <h2 class="text-center text-primary">User Data</h2>
             <div class="table-responsive">
                 <table class="table table-striped table-hover table-bordered">
-                    <thread class="table-dark">
+                    <thead class="table-dark">
                         <tr>
                             <th>Email</th>
                             <th>Name</th>
                             <th>User Name</th>
                             <th>Points</th>
                         </tr>
-                    </thread>
+                    </thead>
                     <tbody>
                         <tr>
                             <td>Jane@fakemail.com</td>
@@ -98,6 +113,8 @@
             this.classList.add("was-validated"); // Apply Bootstrap validation styles
         });
     </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
