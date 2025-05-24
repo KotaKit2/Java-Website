@@ -43,11 +43,52 @@
                     Password must be at least 6 characters long.
                 </div>
             </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" required>
+                <label for="terms" class="form-check-label">
+                    I agree to the <a href="#">terms and conditions</a>
+                </label>
+            </div>
             <button type="submit" class="btn btn-success w-100">Register</button>
         </form>
+        <div class="container mt-5">
+            <h2 class="text-center text-primary">User Data</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered">
+                    <thread class="table-dark">
+                        <tr>
+                            <th>Email</th>
+                            <th>Name</th>
+                            <th>User Name</th>
+                            <th>Points</th>
+                        </tr>
+                    </thread>
+                    <tbody>
+                        <tr>
+                            <td>Jane@fakemail.com</td>
+                            <td>Jane Doe</td>
+                            <td>CosmicJane</td>
+                            <td>72</td>
 
+                        </tr>
+                        <tr>
+                            <td>John@fakemail.com</td>
+                            <td>John Bilby</td>
+                            <td>JohnAgain</td>
+                            <td>433</td>
+                        </tr>
+                        <tr>
+                            <td>Suzie@fakemail.com</td>
+                            <td>Suzan Smalls</td>
+                            <td>SuzieStar</td>
+                            <td>713</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-    
+
     <script>
         document.querySelector("form").addEventListener("submit", function (event) {
             if (!this.checkValidity()) {
